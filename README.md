@@ -1,7 +1,7 @@
 # Demo: Flask with PostgreSQL on Heroku
 Somewhere between a tutorial and an anatomy of a simple Flask app with PostgreSQL and Heroku.
 
-We're doing important work here... enabling users to vote for their favorite of these two pictures: 
+We're doing important work here... enabling users to vote for their favorite of these two pictures:
 <div>
  <img height=320px src='https://pita-cleo.s3.us-east-2.amazonaws.com/IMG_4586.JPG'><img height=320px src="https://pita-cleo.s3.us-east-2.amazonaws.com/IMG_2090.jpeg">
  </div>
@@ -132,7 +132,7 @@ We defined **endpoints** in `app.py` which can be reached from an HTTP request.
 ### Default endpoint
 This endpoint corresponds to our home page. It will query the database for the current number of votes for the images we're voting on:
   - My cat, Pita, dressed as a donut.
-  - My girlfriend's cat, Fruit Gummi, dressed as a donut.
+  - My girlfriend's cat, Mia, dressed as a donut.
 
 Then, it uses the results of these queries to populate `index.html`.
 * If you look at `templates/index.html`, you will see things syntax that looks like `{{pita_votes}}` among the typical HTML. These are handled by Flask and Jinja2. When we write something like
